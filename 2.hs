@@ -12,6 +12,11 @@ absoluto'' n
   | otherwise = n
 
 -- b) maximoabsoluto: devuelve el máximo entre el valor absoluto de dos números enteros.
+maximoabsoluto :: Integer -> Integer -> Integer
+maximoabsoluto a b
+  | absoluto a > absoluto b = absoluto a
+  | otherwise = absoluto b
+
 -- c) maximo3: devuelve el máximo entre tres números enteros.
 -- d) algunoEs0: dados dos números racionales, decide si alguno de los dos es igual a 0 (hacerlo dos veces, una usando pattern
 -- matching y otra no).
