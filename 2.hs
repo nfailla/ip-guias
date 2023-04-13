@@ -69,3 +69,5 @@ digitoUnidades :: Integer -> Integer
 digitoUnidades n = n `mod` 10
 
 -- j) digitoDecenas: dado un número natural, extrae su dígito de las decenas.
+digitoDecenas :: Integer -> Integer
+digitoDecenas n = (n `mod` 100) `div` 10
