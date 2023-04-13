@@ -6,6 +6,9 @@ prodInt u v = fst u * fst v + snd u * snd v
 
 --    b) todoMenor: dadas dos tuplas R×R, decide si es cierto que cada coordenada de la primera tupla es menor a la coordenada
 --       correspondiente de la segunda tupla.
+todoMenor :: (Float, Float) -> (Float, Float) -> Bool
+todoMenor u v = (fst u < fst v) && (snd u < snd v)
+
 --    c) distanciaPuntos: calcula la distancia entre dos puntos de R2.
 --    d) sumaTerna: dada una terna de enteros, calcula la suma de sus tres elementos.
 --    e) sumarSoloMultiplos: dada una terna de números enteros y un natural, calcula la suma de los elementos de la terna que
