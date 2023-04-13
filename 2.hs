@@ -27,6 +27,13 @@ maximo3 a b c
 
 -- d) algunoEs0: dados dos números racionales, decide si alguno de los dos es igual a 0 (hacerlo dos veces, una usando pattern
 -- matching y otra no).
+algunoEs0 :: Float -> Float -> Bool
+algunoEs0 a b = a == 0 || b == 0
+
+algunoEs0' :: Float -> Float -> Bool
+algunoEs0' 0 _ = True
+algunoEs0' _ 0 = True
+
 -- e) ambosSon0: dados dos números racionales, decide si ambos son iguales a 0 (hacerlo dos veces, una usando pattern matching
 -- y otra no).
 -- f) mismoIntervalo: dados dos números reales, indica si están relacionados considerando la relación de equivalencia en R
