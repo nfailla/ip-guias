@@ -61,5 +61,8 @@ sumaDistintos :: Integer -> Integer -> Integer -> Integer
 sumaDistintos a b c = (if a == b then a else a + b) + (if c == a || c == b then 0 else c)
 
 -- h) esMultiploDe: dados dos números naturales, decidir si el primero es múltiplo del segundo.
+esMultiploDe :: Integer -> Integer -> Bool
+esMultiploDe n m = (n `mod` m) == 0
+
 -- i) digitoUnidades: dado un número natural, extrae su dígito de las unidades.
 -- j) digitoDecenas: dado un número natural, extrae su dígito de las decenas.
