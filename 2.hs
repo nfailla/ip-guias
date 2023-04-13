@@ -33,6 +33,7 @@ algunoEs0 a b = a == 0 || b == 0
 algunoEs0' :: Float -> Float -> Bool
 algunoEs0' 0 _ = True
 algunoEs0' _ 0 = True
+algunoEs0' _ _ = False
 
 -- e) ambosSon0: dados dos números racionales, decide si ambos son iguales a 0 (hacerlo dos veces, una usando pattern matching
 -- y otra no).
