@@ -1,7 +1,7 @@
 -- Ejercicio 4. ⋆
 -- Especificar e implementar las siguientes funciones utilizando tuplas para representar pares, ternas de números.
 --    a) prodInt: calcula el producto interno entre dos tuplas R × R.
-prodInt :: (Integer, Integer) -> (Integer, Integer) -> Integer
+prodInt :: (Float, Float) -> (Float, Float) -> Float
 prodInt u v = fst u * fst v + snd u * snd v
 
 --    b) todoMenor: dadas dos tuplas R×R, decide si es cierto que cada coordenada de la primera tupla es menor a la coordenada
