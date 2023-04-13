@@ -10,6 +10,9 @@ todoMenor :: (Float, Float) -> (Float, Float) -> Bool
 todoMenor u v = (fst u < fst v) && (snd u < snd v)
 
 --    c) distanciaPuntos: calcula la distancia entre dos puntos de R2.
+distanciaPuntos :: (Float, Float) -> (Float, Float) -> Float
+distanciaPuntos a b = sqrt ((fst b - fst a) ^ 2 + (snd b - snd a) ^ 2)
+
 --    d) sumaTerna: dada una terna de enteros, calcula la suma de sus tres elementos.
 --    e) sumarSoloMultiplos: dada una terna de números enteros y un natural, calcula la suma de los elementos de la terna que
 --       son múltiplos del número natural. Por ejemplo:
