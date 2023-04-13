@@ -39,5 +39,8 @@ posPrimerPar (a, b, c)
 
 --    g) crearPar :: a ->b ->(a, b): crea un par a partir de sus dos componentes dadas por separado (debe funcionar para
 --       elementos de cualquier tipo).
+crearPar :: a -> b -> (a, b)
+crearPar a b = (a, b)
+
 --    h) invertir :: (a, b) ->(b, a): invierte los elementos del par pasado como parámetro (debe funcionar para elementos
 --       de cualquier tipo).
