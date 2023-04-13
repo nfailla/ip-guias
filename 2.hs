@@ -18,6 +18,13 @@ maximoabsoluto a b
   | otherwise = absoluto b
 
 -- c) maximo3: devuelve el máximo entre tres números enteros.
+maximo3 :: Integer -> Integer -> Integer -> Integer
+-- maximo3 a b c = maximum [a, b, c]
+maximo3 a b c
+  | a >= b && a >= c = a
+  | b >= a && b >= c = b
+  | otherwise = c
+
 -- d) algunoEs0: dados dos números racionales, decide si alguno de los dos es igual a 0 (hacerlo dos veces, una usando pattern
 -- matching y otra no).
 -- e) ambosSon0: dados dos números racionales, decide si ambos son iguales a 0 (hacerlo dos veces, una usando pattern matching
