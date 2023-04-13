@@ -36,6 +36,13 @@ algunoEs0' _ 0 = True
 
 -- e) ambosSon0: dados dos números racionales, decide si ambos son iguales a 0 (hacerlo dos veces, una usando pattern matching
 -- y otra no).
+ambosSon0 :: Float -> Float -> Bool
+ambosSon0 a b = a == 0 && b == 0
+
+ambosSon0' :: Float -> Float -> Bool
+ambosSon0' 0 0 = True
+ambosSon0' _ _ = False
+
 -- f) mismoIntervalo: dados dos números reales, indica si están relacionados considerando la relación de equivalencia en R
 -- cuyas clases de equivalencia son: (−∞, 3],(3, 7] y (7, ∞), o dicho de otra forma, si pertenecen al mismo intervalo.
 -- g) sumaDistintos: que dados tres números enteros calcule la suma sin sumar repetidos (si los hubiera).
