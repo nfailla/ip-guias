@@ -30,6 +30,13 @@ sumarSoloMultiplos (a, b, c) n = (if a `esMultiploDe` n then a else 0) + (if b `
 
 --    f) posPrimerPar: dada una terna de enteros, devuelve la posición del primer número par si es que hay alguno, y devuelve
 --       4 si son todos impares.
+posPrimerPar :: (Integer, Integer, Integer) -> Integer
+posPrimerPar (a, b, c)
+  | a `esMultiploDe` 2 = 0
+  | b `esMultiploDe` 2 = 1
+  | c `esMultiploDe` 2 = 2
+  | otherwise = 4
+
 --    g) crearPar :: a ->b ->(a, b): crea un par a partir de sus dos componentes dadas por separado (debe funcionar para
 --       elementos de cualquier tipo).
 --    h) invertir :: (a, b) ->(b, a): invierte los elementos del par pasado como parámetro (debe funcionar para elementos
