@@ -65,4 +65,7 @@ esMultiploDe :: Integer -> Integer -> Bool
 esMultiploDe n m = (n `mod` m) == 0
 
 -- i) digitoUnidades: dado un número natural, extrae su dígito de las unidades.
+digitoUnidades :: Integer -> Integer
+digitoUnidades n = n `mod` 10
+
 -- j) digitoDecenas: dado un número natural, extrae su dígito de las decenas.
