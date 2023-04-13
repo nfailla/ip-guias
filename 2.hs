@@ -57,6 +57,9 @@ mismoIntervalo' a b
   | otherwise = False
 
 -- g) sumaDistintos: que dados tres números enteros calcule la suma sin sumar repetidos (si los hubiera).
+sumaDistintos :: Integer -> Integer -> Integer -> Integer
+sumaDistintos a b c = (if a == b then a else a + b) + (if c == a || c == b then 0 else c)
+
 -- h) esMultiploDe: dados dos números naturales, decidir si el primero es múltiplo del segundo.
 -- i) digitoUnidades: dado un número natural, extrae su dígito de las unidades.
 -- j) digitoDecenas: dado un número natural, extrae su dígito de las decenas.
