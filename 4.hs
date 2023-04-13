@@ -22,6 +22,12 @@ sumaTerna (a, b, c) = a + b + c
 --       sumarSoloMultiplos (10,-8,-5) 2 ⇝ 2
 --       sumarSoloMultiplos (66,21,4) 5 ⇝ 0
 --       sumarSoloMultiplos (-30,2,12) 3 ⇝ -18
+esMultiploDe :: Integer -> Integer -> Bool
+esMultiploDe n m = (n `mod` m) == 0
+
+sumarSoloMultiplos :: (Integer, Integer, Integer) -> Integer -> Integer
+sumarSoloMultiplos (a, b, c) n = (if a `esMultiploDe` n then a else 0) + (if b `esMultiploDe` n then b else 0) + (if c `esMultiploDe` n then c else 0)
+
 --    f) posPrimerPar: dada una terna de enteros, devuelve la posición del primer número par si es que hay alguno, y devuelve
 --       4 si son todos impares.
 --    g) crearPar :: a ->b ->(a, b): crea un par a partir de sus dos componentes dadas por separado (debe funcionar para
