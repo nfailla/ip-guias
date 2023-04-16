@@ -32,6 +32,11 @@
 
 -- d) f4 :: Float => Float => Float
 --    f4 x y = (x + y) / 2
+-- Toma dos nros reales, y devuelve la mitad de la suma de ambos.
+-- problema f4 (x: R, y: R): R {
+--   requiere: { True }
+--   asegura: { res = ((x + y) / 2) }
+-- }
 
 -- e) f5 :: (Float, Float) => Float
 --    f5 (x, y) = (x + y) / 2
