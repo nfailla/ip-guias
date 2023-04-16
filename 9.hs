@@ -9,7 +9,6 @@
 --   requiere: { True }
 --   asegura: { (n = 0 => res = 1) ^ (n /= 0 => res = 0) }
 -- }
-
 -- b) f2 :: Float => Float
 --    f2 n | n == 1 = 15
 --         | n == -1 = -15
@@ -48,3 +47,8 @@
 
 -- f) f6 :: Float => Int => Bool
 -- f6 a b = truncate a == b
+-- Toma un nro real y un entero y devuelve True en caso de que la parte entera del nro real sea igual al nro entero. Devuelve falso en caso contrario.
+-- problema f6 (a: R, b: Z): Bool {
+--   requiere: { True }
+--   asegura: { res = True <=> ((floor a) == b) }
+-- }
