@@ -24,6 +24,12 @@
 --    f3 n | n <= 9 = 7
 --         | n >= 3 = 5
 
+-- Toma un nro real, y devuelve 7 si dicho nro es menor o igual a 9, ó 5 si dicho nro es mayor a 9.
+-- problema f3 (n: R): R {
+--   requiere: { True }
+--   asegura: { (n <= 9 => res = 7) ^ (n > 9 => res = 5) }
+-- }
+
 -- d) f4 :: Float => Float => Float
 --    f4 x y = (x + y) / 2
 
