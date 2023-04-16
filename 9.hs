@@ -14,6 +14,12 @@
 --    f2 n | n == 1 = 15
 --         | n == -1 = -15
 
+-- Toma un nro real igual a 1 ó -1, y devuelve 15 para el primer caso, o -15 para el segundo
+-- problema f2 (n: R): R {
+--   requiere: { n = 1 v n = -1 }
+--   asegura: { (n = 1 => res = 15) ^ (n = -1 => res = -15) }
+-- }
+
 -- c) f3 :: Float => Float
 --    f3 n | n <= 9 = 7
 --         | n >= 3 = 5
