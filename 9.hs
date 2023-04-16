@@ -40,6 +40,11 @@
 
 -- e) f5 :: (Float, Float) => Float
 --    f5 (x, y) = (x + y) / 2
+-- Toma una tupla 'a' perteneciente a RxR y devuelve la mitad de la suma de sus dos componentes
+-- problema f5 (a: RxR): R {
+--   requiere: { True }
+--   asegura: { res = ((a_0 + a_1) / 2) }
+-- }
 
 -- f) f6 :: Float => Int => Bool
 -- f6 a b = truncate a == b
