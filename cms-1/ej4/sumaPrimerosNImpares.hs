@@ -20,7 +20,7 @@ sumaPrimerosNImpares n
 sumaPrimerosNImparesAux :: Integer -> Integer
 sumaPrimerosNImparesAux 1 = 2 * 1 + 2
 sumaPrimerosNImparesAux i
-  | esPar i = 0
+  | esPar i = 0 + sumaPrimerosNImparesAux (i - 1)
   | otherwise = ((2 * i) + 2) + sumaPrimerosNImparesAux (i - 1)
 
 esPar :: Integer -> Bool
