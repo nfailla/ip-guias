@@ -6,14 +6,7 @@ main = do
 
 sumaPrimerosNImpares :: Integer -> Integer
 -- Completar la definición de la función
--- sumaPrimerosNImpares 1 = 0
--- sumaPrimerosNImpares n = sumaPrimerosNImparesAux (2 * n) - 1
-sumaPrimerosNImpares 1 = 0
-sumaPrimerosNImpares n
-  | hasta < 1 = 0
-  | otherwise = sumaPrimerosNImparesAux hasta
-  where
-    hasta = (2 * n) - 1
+sumaPrimerosNImpares n = sumaPrimerosNImparesAux ((2 * n) - 1)
 
 -- Pueden agregan las funciones que consideren necesarias
 
