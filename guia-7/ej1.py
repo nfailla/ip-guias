@@ -26,7 +26,7 @@ def factorial_de_cinco() -> int:
 
 
 def factorial_de(n: int) -> int:
-  res = 1
+  res: int = 1
   for i in range(1, n):
     res *= i
   return res

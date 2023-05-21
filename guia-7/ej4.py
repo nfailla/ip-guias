@@ -1,10 +1,10 @@
 def peso_pino(altura_en_metros: float) -> float:
-  altura_en_centimetros = altura_en_metros * 100
+  altura_en_centimetros: float = altura_en_metros * 100
 
   if max(altura_en_centimetros, 3000) == 3000:
     return altura_en_centimetros * 3
 
-  altura_sobre_3m_en_cm = altura_en_centimetros - 3000
+  altura_sobre_3m_en_cm: float = altura_en_centimetros - 3000
   return altura_en_centimetros * 3 + altura_sobre_3m_en_cm * 2
   
 

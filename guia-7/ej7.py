@@ -22,6 +22,6 @@ def monitorear_viaje_en_el_tiempo (anio_de_partida: int, algun_anio_de_llegada: 
 
 
 def monitorear_viaje_en_el_tiempo_hasta_aristoteles (anio_de_partida: int) -> None:
-  anio_aristotelico = -384
+  anio_aristotelico: int = -384
   for anio_actual in range(anio_de_partida, anio_aristotelico, -20):
     print("Viajó 20 años al pasado, estamos en el año: " + anio_actual)
